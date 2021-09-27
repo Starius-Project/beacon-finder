@@ -6,7 +6,7 @@ radio.onReceivedString(function (receivedString) {
         9
         )
         if (receivedString == "1") {
-            if (signal >= 8) {
+            if (Math.round(signal) >= 8) {
                 basic.showString("SPECIMEN FOUND")
                 next = 1
                 basic.showIcon(IconNames.Yes)
@@ -18,7 +18,7 @@ radio.onReceivedString(function (receivedString) {
             Math.map(signal, -95, -42, 0, 9),
             9
             )
-            if (signal >= 8) {
+            if (Math.round(signal) >= 8) {
                 radio.sendString("UP")
                 basic.showString("FUEL FOUND")
                 basic.showIcon(IconNames.Yes)
