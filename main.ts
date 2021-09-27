@@ -1,11 +1,11 @@
 radio.onReceivedString(function (receivedString) {
     signal = radio.receivedPacket(RadioPacketProperty.SignalStrength)
     if (next == 0) {
-        led.plotBarGraph(
-        Math.map(signal, -95, -42, 0, 9),
-        9
-        )
         if (receivedString == "1") {
+            led.plotBarGraph(
+            Math.map(signal, -95, -42, 0, 9),
+            9
+            )
             if (Math.round(signal) >= 8) {
                 basic.showString("SPECIMEN FOUND")
                 next = 1
