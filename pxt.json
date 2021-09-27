@@ -1,5 +1,5 @@
 {
-    "name": "proximity-beacon-RX",
+    "name": "beacon-finder",
     "description": "",
     "dependencies": {
         "core": "*",
