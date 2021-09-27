@@ -10,6 +10,7 @@ radio.onReceivedString(function (receivedString) {
                 basic.showString("SPECIMEN FOUND")
                 next = 1
                 basic.showIcon(IconNames.Yes)
+                basic.pause(1000)
             }
         }
     } else if (next == 1) {
@@ -22,6 +23,7 @@ radio.onReceivedString(function (receivedString) {
                 radio.sendString("UP")
                 basic.showString("FUEL FOUND")
                 basic.showIcon(IconNames.Yes)
+                basic.pause(1000)
             }
         }
     }
